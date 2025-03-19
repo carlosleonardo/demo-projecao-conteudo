@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-filho',
+  selector: 'tr[app-filho]',
   imports: [NgTemplateOutlet],
   templateUrl: './filho.component.html',
   styleUrl: './filho.component.css',

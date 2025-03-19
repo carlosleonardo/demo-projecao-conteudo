@@ -1,9 +1,19 @@
 <div>
-  <app-filho [parametro]="1">
-    <ng-template let-parametro="parametro">
-      <p>Um teste: {{ parametro }}</p>
-    </ng-template>
-  </app-filho>
+  <table style="width: 100%">
+    <tbody>
+      <tr>
+        <td>Nome</td>
+        <td>Endereço</td>
+      </tr>
+
+      <tr app-filho [parametro]="1">
+        <ng-template let-parametro="parametro">
+          <td>Um teste: {{ parametro }}</td>
+          <td>Outra coluna</td>
+        </ng-template>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <router-outlet />
