@@ -15,5 +15,6 @@ import {
 })
 export class FilhoComponent {
   parametro = input<number>();
-  @ContentChild(TemplateRef) template!: TemplateRef<any>;
+  //@ContentChild(TemplateRef) template!: TemplateRef<any>;
+  template = contentChild.required<TemplateRef<any>>(TemplateRef);
 }
